@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 #import "LocalLog.h"
+#import "UIImage+CommonTool.h"
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *codeImageV;
 
 @end
 
@@ -17,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     ZYJDlog(@"%@",self);
+//    _codeImageV.image = [UIImage QRCodeWithString:@"张永杰"];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

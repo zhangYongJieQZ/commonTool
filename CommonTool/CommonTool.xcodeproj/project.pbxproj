@@ -13,10 +13,17 @@
 		C1FF51A51D7570510006461F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FF51A31D7570510006461F /* Main.storyboard */; };
 		C1FF51A71D7570510006461F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1FF51A61D7570510006461F /* Assets.xcassets */; };
 		C1FF51AA1D7570510006461F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FF51A81D7570510006461F /* LaunchScreen.storyboard */; };
-		C1FF51B41D7570770006461F /* LocalLog.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FF51B31D7570770006461F /* LocalLog.m */; };
+		C1FF51CE1D75862B0006461F /* LocalLog.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FF51C41D75862B0006461F /* LocalLog.m */; };
+		C1FF51CF1D75862B0006461F /* NSString+CommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FF51C71D75862B0006461F /* NSString+CommonTool.m */; };
+		C1FF51D01D75862B0006461F /* UIImage+CommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FF51CA1D75862B0006461F /* UIImage+CommonTool.m */; };
+		C1FF51D11D75862B0006461F /* UIViewController+Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FF51CD1D75862B0006461F /* UIViewController+Navigation.m */; };
+		C1FF51D61D758EF90006461F /* CommondMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FF51D51D758EF90006461F /* CommondMethod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C12C7F7C1E5AC75900C65B41 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C12C7F7D1E5ACA3000C65B41 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		C12C7F7E1E5ACB3100C65B41 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
 		C1FF51971D7570510006461F /* CommonTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1FF519B1D7570510006461F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C1FF519D1D7570510006461F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -27,8 +34,17 @@
 		C1FF51A61D7570510006461F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1FF51A91D7570510006461F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1FF51AB1D7570510006461F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1FF51B21D7570770006461F /* LocalLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalLog.h; sourceTree = "<group>"; };
-		C1FF51B31D7570770006461F /* LocalLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalLog.m; sourceTree = "<group>"; };
+		C1FF51C31D75862B0006461F /* LocalLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalLog.h; sourceTree = "<group>"; };
+		C1FF51C41D75862B0006461F /* LocalLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalLog.m; sourceTree = "<group>"; };
+		C1FF51C61D75862B0006461F /* NSString+CommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CommonTool.h"; sourceTree = "<group>"; };
+		C1FF51C71D75862B0006461F /* NSString+CommonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CommonTool.m"; sourceTree = "<group>"; };
+		C1FF51C91D75862B0006461F /* UIImage+CommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CommonTool.h"; sourceTree = "<group>"; };
+		C1FF51CA1D75862B0006461F /* UIImage+CommonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CommonTool.m"; sourceTree = "<group>"; };
+		C1FF51CC1D75862B0006461F /* UIViewController+Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Navigation.h"; sourceTree = "<group>"; };
+		C1FF51CD1D75862B0006461F /* UIViewController+Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Navigation.m"; sourceTree = "<group>"; };
+		C1FF51D21D75863C0006461F /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		C1FF51D41D758EF90006461F /* CommondMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommondMethod.h; sourceTree = "<group>"; };
+		C1FF51D51D758EF90006461F /* CommondMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommondMethod.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +77,10 @@
 		C1FF51991D7570510006461F /* CommonTool */ = {
 			isa = PBXGroup;
 			children = (
-				C1FF51B11D7570680006461F /* LocalNslog */,
+				C12C7F7C1E5AC75900C65B41 /* PrefixHeader.pch */,
+				C12C7F7E1E5ACB3100C65B41 /* Color.h */,
+				C12C7F7D1E5ACA3000C65B41 /* Config.h */,
+				C1FF51C11D75862B0006461F /* Tool */,
 				C1FF519D1D7570510006461F /* AppDelegate.h */,
 				C1FF519E1D7570510006461F /* AppDelegate.m */,
 				C1FF51A01D7570510006461F /* ViewController.h */,
@@ -83,13 +102,62 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C1FF51B11D7570680006461F /* LocalNslog */ = {
+		C1FF51C11D75862B0006461F /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				C1FF51B21D7570770006461F /* LocalLog.h */,
-				C1FF51B31D7570770006461F /* LocalLog.m */,
+				C1FF51D31D758EE80006461F /* SystemCommon */,
+				C1FF51C21D75862B0006461F /* LocalNslog */,
+				C1FF51C51D75862B0006461F /* NSString */,
+				C1FF51C81D75862B0006461F /* UIImage */,
+				C1FF51CB1D75862B0006461F /* UINavigation */,
+				C1FF51D21D75863C0006461F /* Tool.h */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		C1FF51C21D75862B0006461F /* LocalNslog */ = {
+			isa = PBXGroup;
+			children = (
+				C1FF51C31D75862B0006461F /* LocalLog.h */,
+				C1FF51C41D75862B0006461F /* LocalLog.m */,
 			);
 			path = LocalNslog;
+			sourceTree = "<group>";
+		};
+		C1FF51C51D75862B0006461F /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				C1FF51C61D75862B0006461F /* NSString+CommonTool.h */,
+				C1FF51C71D75862B0006461F /* NSString+CommonTool.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		C1FF51C81D75862B0006461F /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				C1FF51C91D75862B0006461F /* UIImage+CommonTool.h */,
+				C1FF51CA1D75862B0006461F /* UIImage+CommonTool.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		C1FF51CB1D75862B0006461F /* UINavigation */ = {
+			isa = PBXGroup;
+			children = (
+				C1FF51CC1D75862B0006461F /* UIViewController+Navigation.h */,
+				C1FF51CD1D75862B0006461F /* UIViewController+Navigation.m */,
+			);
+			path = UINavigation;
+			sourceTree = "<group>";
+		};
+		C1FF51D31D758EE80006461F /* SystemCommon */ = {
+			isa = PBXGroup;
+			children = (
+				C1FF51D41D758EF90006461F /* CommondMethod.h */,
+				C1FF51D51D758EF90006461F /* CommondMethod.m */,
+			);
+			path = SystemCommon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,9 +231,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1FF51D61D758EF90006461F /* CommondMethod.m in Sources */,
+				C1FF51D01D75862B0006461F /* UIImage+CommonTool.m in Sources */,
 				C1FF51A21D7570510006461F /* ViewController.m in Sources */,
 				C1FF519F1D7570510006461F /* AppDelegate.m in Sources */,
-				C1FF51B41D7570770006461F /* LocalLog.m in Sources */,
+				C1FF51CE1D75862B0006461F /* LocalLog.m in Sources */,
+				C1FF51D11D75862B0006461F /* UIViewController+Navigation.m in Sources */,
+				C1FF51CF1D75862B0006461F /* NSString+CommonTool.m in Sources */,
 				C1FF519C1D7570510006461F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +352,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CommonTool/PrefixHeader.pch";
 				INFOPLIST_FILE = CommonTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "------.CommonTool";
@@ -291,6 +365,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CommonTool/PrefixHeader.pch";
 				INFOPLIST_FILE = CommonTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "------.CommonTool";
@@ -317,6 +393,7 @@
 				C1FF51B01D7570510006461F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
