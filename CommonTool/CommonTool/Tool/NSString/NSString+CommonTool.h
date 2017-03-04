@@ -78,7 +78,7 @@
 
 //是否包含汉字
 + (BOOL)containsChinese:(NSString *)string;
-
-
+//获取首字母,大写返回(如果不是英文字母返回#)
+- (NSString *)getFirstLetter;
 
 @end

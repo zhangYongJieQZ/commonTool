@@ -270,5 +270,26 @@
     return NO;
 }
 
+- (NSString *)getFirstLetter{
+    NSString *surName = [self substringToIndex:1];
+    //判断首字符是英文还是中文
+    char firstLetter = [surName characterAtIndex:0];
+    const char *u8Temp = [surName UTF8String];
+    if (strlen(u8Temp) == 3) {
+        //中文截取第一个汉子分解出英文
+        NSMutableString *mutableString = [NSMutableString stringWithString:surName];
+        CFStringTransform((CFMutableStringRef)mutableString, NULL, kCFStringTransformToLatin, false);
+        CFStringTransform((CFMutableStringRef)mutableString, NULL, kCFStringTransformStripDiacritics, false);
+        return [[mutableString substringToIndex:1] uppercaseString];
+    }
+    if ((firstLetter > 64) && (firstLetter < 91)) {
+        //此处为大写直接返回
+        return [NSString stringWithFormat:@"%c",firstLetter];
+    }else if ((firstLetter > 96) && (firstLetter < 123)){
+        return [[NSString stringWithFormat:@"%c",firstLetter] uppercaseString];
+    }else{
+        return @"#";
+    }
+}
 
 @end
